@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context="com.example.m_ang.museo.MainActivity">
 
+    <Button
+        android:id="@+id/nfc_button"
+
+        android:text="NFC"
+        android:textColor="#1f2021"
+        android:textSize="32sp"
+
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:background="@drawable/buttonshape"
+        tools:layout_editor_absoluteY="27dp"
+        tools:layout_editor_absoluteX="12dp" />
+
+    <Button
+        android:id="@+id/qr_button"
+
+        android:text="QR"
+        android:textColor="#1f2021"
+        android:textSize="32sp"
+
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:background="@drawable/buttonshape"
+        tools:layout_editor_absoluteY="276dp"
+        tools:layout_editor_absoluteX="12dp" />
+
 </android.support.constraint.ConstraintLayout>
