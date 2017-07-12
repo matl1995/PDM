@@ -1,17 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.m_ang.museo.ContenidoActivity">
-    
-    <TextView
-        android:id="@+id/texto"
-        android:layout_width="395dp"
-        android:layout_height="587dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"
-        android:text="Hello world"/>
+    android:layout_height="match_parent" >
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="40dp"
+        android:textColor="#494b4f"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/contenido"
+        android:layout_width="335dp"
+        android:layout_height="430dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:layout_below="@+id/titulo"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/pregunta_button"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="14dp"
+        android:text="Pregunta"
+        android:textColor="#1f2021"
+        android:textSize="32sp"
+        android:background="@drawable/buttonshape" />
+
+</RelativeLayout>

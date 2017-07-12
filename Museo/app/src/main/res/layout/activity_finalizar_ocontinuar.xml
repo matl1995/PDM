@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/finalizar_button"
+
+        android:text="Finalizar"
+        android:textColor="#1f2021"
+        android:textSize="32sp"
+
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"/>
+
+    <Button
+        android:id="@+id/nfc_button"
+
+        android:text="NFC"
+        android:textColor="#1f2021"
+        android:textSize="32sp"
+
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="35dp"/>
+
+    <Button
+        android:id="@+id/qr_button"
+
+        android:text="QR"
+        android:textColor="#1f2021"
+        android:textSize="32sp"
+
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="35dp"
+        android:onClick="EscanerQR" />
+
+</RelativeLayout>

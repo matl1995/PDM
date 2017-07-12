@@ -25,7 +25,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ContenidoActivity"></activity>
+        <activity android:name=".ContenidoActivity" />
+        <activity android:name=".SolicitudNombreActivity" />
+        <activity android:name=".FinalizarOContinuarActivity" />
+        <activity android:name=".PreguntaActivity" />
+        <activity android:name=".PuntuacionActivity"></activity>
     </application>
 
 </manifest>
