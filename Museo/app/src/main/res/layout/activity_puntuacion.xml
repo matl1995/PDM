@@ -13,7 +13,7 @@
         android:textAlignment="center"/>
 
     <EditText
-        android:id="@+id/puntuaciones"
+        android:id="@+id/puntuaciones_finales"
         android:layout_width="335dp"
         android:layout_height="430dp"
         android:ems="10"

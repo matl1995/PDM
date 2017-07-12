@@ -17,7 +17,7 @@ public class PuntuacionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puntuacion);
 
-        EditText puntuaciones=(EditText) findViewById(R.id.puntuaciones);
+        EditText puntuaciones=(EditText) findViewById(R.id.puntuaciones_finales);
         String texto="";
 
         SharedPreferences prefs = getSharedPreferences("Puntos", MODE_PRIVATE);

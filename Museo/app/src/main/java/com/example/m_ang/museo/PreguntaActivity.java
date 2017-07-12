@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -51,15 +50,7 @@ public class PreguntaActivity extends AppCompatActivity {
             Respuesta2Button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     SharedPreferences prefs1 = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
-                    String usuario_actual="";
-                    Map<String, ?> usuario = prefs1.getAll();
-                    for (Map.Entry<String, ?> entry : usuario.entrySet()) {
-                        if(entry.getKey().compareTo("usuario_actual")==0)
-                        {
-                            usuario_actual=entry.getValue().toString();
-                        }
-                    }
-
+                    String usuario_actual=prefs1.getString("usuario_actual","");
                     SharedPreferences prefs = getSharedPreferences("Puntos", MODE_PRIVATE);
                     Map<String, ?> allEntries = prefs.getAll();
                     for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
@@ -112,15 +103,7 @@ public class PreguntaActivity extends AppCompatActivity {
             Respuesta3Button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     SharedPreferences prefs1 = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
-                    String usuario_actual="";
-                    Map<String, ?> usuario = prefs1.getAll();
-                    for (Map.Entry<String, ?> entry : usuario.entrySet()) {
-                        if(entry.getKey().compareTo("usuario_actual")==0)
-                        {
-                            usuario_actual=entry.getValue().toString();
-                        }
-                    }
-
+                    String usuario_actual=prefs1.getString("usuario_actual","");
                     SharedPreferences prefs = getSharedPreferences("Puntos", MODE_PRIVATE);
                     Map<String, ?> allEntries = prefs.getAll();
                     for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
@@ -172,15 +155,7 @@ public class PreguntaActivity extends AppCompatActivity {
             Respuesta2Button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     SharedPreferences prefs1 = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
-                    String usuario_actual="";
-                    Map<String, ?> usuario = prefs1.getAll();
-                    for (Map.Entry<String, ?> entry : usuario.entrySet()) {
-                        if(entry.getKey().compareTo("usuario_actual")==0)
-                        {
-                            usuario_actual=entry.getValue().toString();
-                        }
-                    }
-
+                    String usuario_actual=prefs1.getString("usuario_actual","");
                     SharedPreferences prefs = getSharedPreferences("Puntos", MODE_PRIVATE);
                     Map<String, ?> allEntries = prefs.getAll();
                     for (Map.Entry<String, ?> entry : allEntries.entrySet()) {

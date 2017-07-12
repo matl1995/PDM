@@ -20,11 +20,11 @@ public class SolicitudNombreActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText texto=(EditText) findViewById(R.id.campo_entrada);
                 String contenido=texto.getText().toString();
+                SharedPreferences.Editor editor1 = getSharedPreferences("MisPreferencias", MODE_PRIVATE).edit();
+                editor1.putString("usuario_actual", contenido);
+                editor1.commit();
                 SharedPreferences.Editor editor = getSharedPreferences("Puntos", MODE_PRIVATE).edit();
                 editor.putString(contenido, "0");
-                editor.commit();
-                SharedPreferences.Editor editor1 = getSharedPreferences("MisPreferencias", MODE_PRIVATE).edit();
-                editor.putString("usuario_actual", contenido);
                 editor.commit();
                 Intent i = new Intent(SolicitudNombreActivity.this, MainActivity.class);
                 startActivity(i);
