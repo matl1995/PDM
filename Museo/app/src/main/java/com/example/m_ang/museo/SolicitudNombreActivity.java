@@ -20,6 +20,10 @@ public class SolicitudNombreActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText texto=(EditText) findViewById(R.id.campo_entrada);
                 String contenido=texto.getText().toString();
+                if(contenido.compareTo("")==0)
+                {
+                    contenido="usuario_defecto";
+                }
                 SharedPreferences.Editor editor1 = getSharedPreferences("MisPreferencias", MODE_PRIVATE).edit();
                 editor1.putString("usuario_actual", contenido);
                 editor1.commit();

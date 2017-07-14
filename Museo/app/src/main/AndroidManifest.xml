@@ -3,6 +3,11 @@
     package="com.example.m_ang.museo">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -29,7 +34,8 @@
         <activity android:name=".SolicitudNombreActivity" />
         <activity android:name=".FinalizarOContinuarActivity" />
         <activity android:name=".PreguntaActivity" />
-        <activity android:name=".PuntuacionActivity"></activity>
+        <activity android:name=".PuntuacionActivity" />
+        <activity android:name=".NFCReaderActivity"></activity>
     </application>
 
 </manifest>
