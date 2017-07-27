@@ -18,7 +18,11 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".PuntuacionesActivity" />
-        <activity android:name=".SolicitarNombreActivity"></activity>
+        <activity android:name=".SolicitarNombreActivity" />
+        <activity android:name=".PrimerNivel" />
+        <activity android:name=".Fallaste" />
+        <activity android:name=".Acertaste" />
+        <activity android:name=".SegundoNivel"></activity>
     </application>
 
 </manifest>

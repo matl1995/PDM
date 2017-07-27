@@ -30,7 +30,7 @@ public class SolicitarNombreActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = getSharedPreferences("Puntos", MODE_PRIVATE).edit();
                 editor.putString(contenido, "0");
                 editor.commit();
-                Intent i = new Intent(SolicitarNombreActivity.this, MainActivity.class);
+                Intent i = new Intent(SolicitarNombreActivity.this, PrimerNivel.class);
                 startActivity(i);
                 finish();
             }
