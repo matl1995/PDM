@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight=".25"
+        android:text="Nombre:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/nombre_usuario"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight=".25"
+        android:text="usuario_wear"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Button
+        android:id="@+id/continuar_button"
+
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_style"
+        android:text="Continuar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+</RelativeLayout>
