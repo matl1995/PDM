@@ -1,0 +1,82 @@
+<ScrollView android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/primer_button"
+
+            android:text="Colores"
+            android:textColor="#1f2021"
+            android:textSize="32sp"
+
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/segundo_button"
+
+            android:text="Formas"
+            android:textColor="#1f2021"
+            android:textSize="32sp"
+
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/tercer_button"
+
+            android:text="Dinero"
+            android:textColor="#1f2021"
+            android:textSize="32sp"
+
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/cuarto_button"
+
+            android:text="Herramientas"
+            android:textColor="#1f2021"
+            android:textSize="32sp"
+
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/quinto_button"
+
+            android:text="Memoria"
+            android:textColor="#1f2021"
+            android:textSize="32sp"
+
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="30dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
