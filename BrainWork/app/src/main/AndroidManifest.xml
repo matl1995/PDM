@@ -9,19 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InicioActivity"></activity>
+        <activity android:name=".InicioActivity" />
         <!-- Splash screen -->
         <activity
             android:name=".SplashScreenActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Colores.ColoresActivity" />
+        <activity android:name=".Colores.AcertasteActivity" />
+        <activity android:name=".Colores.FallasteActivity" />
+        <activity android:name=".Colores.Colores1Activity" />
+        <activity android:name=".Colores.Colores2Activity"></activity>
     </application>
 
 </manifest>

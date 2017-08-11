@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0087ff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="¿Cual es el color de fondo?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/color1_button"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="20dp"
+        android:text="Rojo"/>
+
+    <Button
+        android:id="@+id/color2_button"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="20dp"
+        android:text="Amarillo"/>
+
+    <Button
+        android:id="@+id/color3_button"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="20dp"
+        android:text="Azul"/>
+
+</RelativeLayout>
