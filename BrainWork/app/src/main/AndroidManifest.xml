@@ -26,7 +26,13 @@
         <activity android:name=".Colores.AcertasteActivity" />
         <activity android:name=".Colores.FallasteActivity" />
         <activity android:name=".Colores.Colores1Activity" />
-        <activity android:name=".Colores.Colores2Activity"></activity>
+        <activity android:name=".Colores.Colores2Activity" />
+        <activity android:name=".Formas.FormasActivity" />
+        <activity android:name=".Formas.FallasteActivity" />
+        <activity android:name=".Formas.AcertasteActivity" />
+        <activity android:name=".Formas.Formas1Activity" />
+        <activity android:name=".Formas.Formas2Activity" />
+        <activity android:name=".Memoria.MemoriaActivity"></activity>
     </application>
 
 </manifest>

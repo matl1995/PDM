@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.m_ang.brainwork.Colores.ColoresActivity;
+import com.example.m_ang.brainwork.Formas.FormasActivity;
+import com.example.m_ang.brainwork.Memoria.MemoriaActivity;
 
 public class InicioActivity extends AppCompatActivity {
 
@@ -23,5 +25,26 @@ public class InicioActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button formas=(Button) findViewById(R.id.segundo_button);
+        formas.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent=new Intent(InicioActivity.this,FormasActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        //Siguiente boton
+
+        Button memoria=(Button) findViewById(R.id.quinto_button);
+        memoria.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent=new Intent(InicioActivity.this,MemoriaActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }
