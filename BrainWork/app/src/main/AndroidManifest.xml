@@ -32,7 +32,7 @@
         <activity android:name=".Formas.AcertasteActivity" />
         <activity android:name=".Formas.Formas1Activity" />
         <activity android:name=".Formas.Formas2Activity" />
-        <activity android:name=".Memoria.MemoriaActivity"></activity>
+        <activity android:name=".Memoria.MemoriaActivity" />
     </application>
 
 </manifest>

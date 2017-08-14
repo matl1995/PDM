@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.m_ang.brainwork.Memoria.MemoriaActivity">
+    android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/cat1"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/dog1"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="150dp"/>
+
+    <Button
+        android:id="@+id/cat2"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="270dp"/>
+
+    <Button
+        android:id="@+id/rabbit1"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="390dp" />
+
+    <Button
+        android:id="@+id/rabbit2"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/horse1"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="150dp" />
+
+    <Button
+        android:id="@+id/horse2"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="270dp" />
+
+    <Button
+        android:id="@+id/dog2"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/card"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="390dp" />
+
+</RelativeLayout>
