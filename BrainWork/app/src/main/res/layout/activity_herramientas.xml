@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/martillo"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/martillo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/tornillo"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/tornillo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="150dp"/>
+
+    <Button
+        android:id="@+id/clavo"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/clavo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="270dp"/>
+
+    <Button
+        android:id="@+id/sierra"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/sierra"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="390dp" />
+
+    <Button
+        android:id="@+id/llave_inglesa"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/llave_inglesa"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/tronco"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/tronco"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="150dp" />
+
+    <Button
+        android:id="@+id/grifo"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/grifo"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="270dp" />
+
+    <Button
+        android:id="@+id/destornillador"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:background="@drawable/destornillador"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="390dp" />
+
+</RelativeLayout>
