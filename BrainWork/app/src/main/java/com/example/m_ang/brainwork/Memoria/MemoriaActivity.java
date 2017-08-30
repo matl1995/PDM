@@ -16,9 +16,13 @@ public class MemoriaActivity extends AppCompatActivity {
     Button actual;
     int general=0;
     int dog=0;
+    int dog_final;
     int cat=0;
+    int cat_final;
     int rabbit=0;
+    int rabbit_final;
     int horse=0;
+    int horse_final;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,13 +41,6 @@ public class MemoriaActivity extends AppCompatActivity {
         final Button horse1=(Button) findViewById(R.id.horse1);
         final Button horse2=(Button) findViewById(R.id.horse2);
 
-        if(dog==1 && cat==1 && horse==1 && rabbit==1)
-        {
-            Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
-            startActivity(intent);
-            finish();
-        }
-
         dog1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(dog==0 && general==0)
@@ -57,6 +54,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(dog==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     dog1.setBackgroundResource(R.drawable.dog);
 
@@ -82,7 +83,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(dog==1 && general==1) {
                     general--;
-                    dog=0;
+                    dog_final=1;
                     dog1.setBackgroundResource(R.drawable.dog);
 
                     Context context = getApplicationContext();
@@ -93,6 +94,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     dog1.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
@@ -110,6 +118,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(dog==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     dog2.setBackgroundResource(R.drawable.dog);
 
@@ -135,7 +147,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(dog==1 && general==1) {
                     general--;
-                    dog=0;
+                    dog_final=1;
                     dog2.setBackgroundResource(R.drawable.dog);
 
                     Context context = getApplicationContext();
@@ -146,6 +158,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     dog2.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
@@ -163,6 +182,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(cat==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     cat1.setBackgroundResource(R.drawable.cat);
 
@@ -188,7 +211,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(cat==1 && general==1) {
                     general--;
-                    cat=0;
+                    cat_final=1;
                     cat1.setBackgroundResource(R.drawable.cat);
 
                     Context context = getApplicationContext();
@@ -199,6 +222,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     cat1.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
@@ -216,6 +246,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(cat==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     cat2.setBackgroundResource(R.drawable.cat);
 
@@ -241,7 +275,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(cat==1 && general==1) {
                     general--;
-                    cat=0;
+                    cat_final=1;
                     cat2.setBackgroundResource(R.drawable.cat);
 
                     Context context = getApplicationContext();
@@ -252,6 +286,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     cat2.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
@@ -269,6 +310,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(rabbit==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     rabbit1.setBackgroundResource(R.drawable.rabbit);
 
@@ -294,7 +339,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(rabbit==1 && general==1) {
                     general--;
-                    rabbit=0;
+                    rabbit_final=1;
                     rabbit1.setBackgroundResource(R.drawable.rabbit);
 
                     Context context = getApplicationContext();
@@ -305,6 +350,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     rabbit1.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
@@ -322,6 +374,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(rabbit==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     rabbit2.setBackgroundResource(R.drawable.rabbit);
 
@@ -347,7 +403,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(rabbit==1 && general==1) {
                     general--;
-                    rabbit=0;
+                    rabbit_final=1;
                     rabbit2.setBackgroundResource(R.drawable.rabbit);
 
                     Context context = getApplicationContext();
@@ -358,6 +414,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     rabbit2.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
@@ -375,6 +438,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(horse==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     horse1.setBackgroundResource(R.drawable.horse);
 
@@ -400,7 +467,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(horse==1 && general==1) {
                     general--;
-                    horse=0;
+                    horse_final=1;
                     horse1.setBackgroundResource(R.drawable.horse);
 
                     Context context = getApplicationContext();
@@ -411,6 +478,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     horse1.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
@@ -428,6 +502,10 @@ public class MemoriaActivity extends AppCompatActivity {
                 else if(horse==0 && general==1)
                 {
                     general--;
+                    dog=0;
+                    cat=0;
+                    rabbit=0;
+                    horse=0;
 
                     horse2.setBackgroundResource(R.drawable.horse);
 
@@ -453,7 +531,7 @@ public class MemoriaActivity extends AppCompatActivity {
                 }
                 else if(horse==1 && general==1) {
                     general--;
-                    horse=0;
+                    horse_final=1;
                     horse2.setBackgroundResource(R.drawable.horse);
 
                     Context context = getApplicationContext();
@@ -464,6 +542,13 @@ public class MemoriaActivity extends AppCompatActivity {
                     toast.show();
 
                     horse2.setEnabled(false);
+
+                    if(dog_final==1 && cat_final==1 && rabbit_final==1 && horse_final==1)
+                    {
+                        Intent intent=new Intent(MemoriaActivity.this,InicioActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }
         });
