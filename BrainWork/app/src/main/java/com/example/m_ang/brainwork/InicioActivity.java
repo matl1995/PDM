@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.m_ang.brainwork.Colores.ColoresActivity;
+import com.example.m_ang.brainwork.Dinero.DineroActivity;
 import com.example.m_ang.brainwork.Formas.FormasActivity;
 import com.example.m_ang.brainwork.Herramientas.HerramientasActivity;
 import com.example.m_ang.brainwork.Memoria.MemoriaActivity;
@@ -36,7 +37,14 @@ public class InicioActivity extends AppCompatActivity {
             }
         });
 
-        //Siguiente boton
+        Button dinero=(Button) findViewById(R.id.tercer_button);
+        dinero.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent=new Intent(InicioActivity.this,DineroActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         Button herramientas=(Button) findViewById(R.id.cuarto_button);
         herramientas.setOnClickListener(new View.OnClickListener() {
