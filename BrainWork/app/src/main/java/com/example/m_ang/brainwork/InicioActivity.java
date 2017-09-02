@@ -10,6 +10,8 @@ import com.example.m_ang.brainwork.Colores.ColoresActivity;
 import com.example.m_ang.brainwork.Dinero.DineroActivity;
 import com.example.m_ang.brainwork.Formas.FormasActivity;
 import com.example.m_ang.brainwork.Herramientas.HerramientasActivity;
+import com.example.m_ang.brainwork.Herramientas.InstruccionesHActivity;
+import com.example.m_ang.brainwork.Memoria.InstruccionesMActivity;
 import com.example.m_ang.brainwork.Memoria.MemoriaActivity;
 
 public class InicioActivity extends AppCompatActivity {
@@ -49,7 +51,7 @@ public class InicioActivity extends AppCompatActivity {
         Button herramientas=(Button) findViewById(R.id.cuarto_button);
         herramientas.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent=new Intent(InicioActivity.this,HerramientasActivity.class);
+                Intent intent=new Intent(InicioActivity.this,InstruccionesHActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -58,7 +60,7 @@ public class InicioActivity extends AppCompatActivity {
         Button memoria=(Button) findViewById(R.id.quinto_button);
         memoria.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent=new Intent(InicioActivity.this,MemoriaActivity.class);
+                Intent intent=new Intent(InicioActivity.this,InstruccionesMActivity.class);
                 startActivity(intent);
                 finish();
             }

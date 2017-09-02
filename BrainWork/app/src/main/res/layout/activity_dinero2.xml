@@ -8,7 +8,7 @@
         android:layout_height="125dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
-        android:text="Selecciona las monedas necesarias para pagar 17 euros"
+        android:text="Selecciona las monedas necesarias para pagar 1.40 euros"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <Button
@@ -17,7 +17,7 @@
         android:layout_height="90dp"
         android:layout_marginTop="190dp"
         android:layout_marginLeft="10dp"
-        android:background="@drawable/uneuro"/>
+        android:background="@drawable/diezcent"/>
 
     <Button
         android:id="@+id/dinero2"
@@ -25,7 +25,7 @@
         android:layout_height="90dp"
         android:layout_marginTop="310dp"
         android:layout_marginLeft="10dp"
-        android:background="@drawable/diezcent"/>
+        android:background="@drawable/cincoeuro"/>
 
     <Button
         android:id="@+id/dinero3"
@@ -33,7 +33,7 @@
         android:layout_height="90dp"
         android:layout_marginTop="430dp"
         android:layout_marginLeft="10dp"
-        android:background="@drawable/doseuro"/>
+        android:background="@drawable/diezcent"/>
 
     <Button
         android:id="@+id/dinero4"
@@ -41,7 +41,7 @@
         android:layout_height="90dp"
         android:layout_marginTop="190dp"
         android:layout_marginLeft="190dp"
-        android:background="@drawable/cincoeuro"/>
+        android:background="@drawable/uneuro"/>
 
     <Button
         android:id="@+id/dinero5"
@@ -49,7 +49,7 @@
         android:layout_height="90dp"
         android:layout_marginTop="310dp"
         android:layout_marginLeft="190dp"
-        android:background="@drawable/diezeuro"/>
+        android:background="@drawable/veintecent"/>
 
     <Button
         android:id="@+id/dinero6"
@@ -57,6 +57,6 @@
         android:layout_height="90dp"
         android:layout_marginTop="430dp"
         android:layout_marginLeft="190dp"
-        android:background="@drawable/cincuentacent"/>
+        android:background="@drawable/doseuro"/>
 
 </RelativeLayout>

@@ -34,7 +34,10 @@
         <activity android:name=".Formas.Formas2Activity" />
         <activity android:name=".Memoria.MemoriaActivity" />
         <activity android:name=".Herramientas.HerramientasActivity" />
-        <activity android:name=".Dinero.DineroActivity"></activity>
+        <activity android:name=".Dinero.DineroActivity" />
+        <activity android:name=".Dinero.Dinero2Activity" />
+        <activity android:name=".Herramientas.InstruccionesHActivity" />
+        <activity android:name=".Memoria.InstruccionesMActivity"></activity>
     </application>
 
 </manifest>
